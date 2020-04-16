@@ -1,0 +1,207 @@
+/* BIG Website */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f6eedf;
+}
+
+
+header h1.title {
+  background-color: #d63447;
+  color: #eee;
+  text-align: center;
+  padding: 2%;
+}
+
+header nav ul {
+  z-index: 2;
+}
+
+
+main {
+  padding-bottom: 2.5rem;
+  margin: auto;
+  overflow: auto;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1em;
+}
+
+img {
+  max-width: 300px;
+  border: 2px solid black;
+}
+
+
+
+figure {
+  display: inline-block;
+  margin: 0.5%;
+}
+
+section {
+  float: left;
+  width: 64%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+section h2,
+section h3,
+section div,
+section p,
+section ul,
+section ol {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+section li {
+  list-style-type: circle;
+  margin-bottom: 1em;
+}
+
+aside {
+  float: right;
+  width: 33%;
+  background-color: #debf8a;
+  border: 1px solid black;
+  margin-top: 5%;
+  font-size: 0.9em;
+}
+
+aside h3 {
+  font-size: 1.5em;
+}
+
+aside h3,
+aside ul,
+aside dl,
+aside address,
+aside a {
+  margin: 5%;
+}
+
+aside li {
+  list-style-type: circle;
+  margin-left: 5%;
+}
+
+aside dt {
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+aside dd {
+  font-size: 0.8em;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;
+  
+  background-color: #ebbeb0;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  clear: both;
+}
+
+
+div.gallery {
+  text-align: center;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+
+/* EMBED STYLES */
+
+.embed-container {
+	position: relative;
+    margin-top: 5%;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.embed-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* HIDE AGENDA VIEW */
+
+div.embed-container.agenda-view {
+  display: none;
+}
+
+
+/* MOBILE STYLES */
+
+@media all and (max-width: 600px) {
+  
+  main {
+    width: 100%;
+  }
+  
+  section {
+    float: none;
+    width: 100%;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+  }
+  
+  div.embed-container.agenda-view {
+    display: block;
+  }
+  
+  div.embed-container.month-view {
+    display: none;
+  }
+  
+  header h1.title {
+    font-size: 1.5em;
+  }
+  
+  footer {
+    height: 3rem;
+    font-size: 0.8em;
+  }
+}
