@@ -1,0 +1,499 @@
+/* WEB Portfolio: Global Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color:#F5F5F5;
+  color: #67727A;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 180%;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2%
+}
+
+h3 {
+  font-size: 175%;
+  line-height: 155%;
+  padding: 5% 0;
+}
+
+h6 {
+  font-size: 100%;
+  line-height: 155%;
+  padding: 2% 0;
+}
+
+div.content {
+  padding: 2% 20%;
+  font-size: 110%;
+  line-height: 150%;
+  text-indent: 1%;
+  text-align: justify;
+  color: #F5F5F5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+header {
+  background-color: #69ac83;
+  width: 100%;
+  height: 86px;
+}
+
+.header-wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+}
+
+#logo {
+  margin: 30px auto;
+  float: left;
+  width: 200px;
+  height: 100px;
+  background: url(../images/logo-rays-100x100.png) no-repeat center;
+}
+
+
+/* SECTION STYLES */
+
+.big-picture {
+  width: 100%;
+  background-color: #69ac83;
+}
+
+.big-picture-area {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 100px 5% 0 5%;
+  padding-bottom: 5em;
+}
+
+.intro-wrap {
+  background-color: #eaeaea;
+  border: 3px solid #59a2b3;
+  border-radius: 500px;
+  margin: 0 2em;
+}
+
+.intro-wrap:hover * {
+  color: #e8546f;
+  transition: all 0.5s ease 0s;
+}
+
+
+section.big-picture h1,
+section.big-picture h2,
+section.big-picture p {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lexend Giga', sans-serif;
+  color: #67727A;
+  text-align: center;
+  justify-content: center;
+}
+
+section.big-picture p {
+  font-size: 120%;
+  padding-top: 6%;
+  padding-bottom: 2%;
+}
+
+section.big-picture h2 {
+  font-size: 250%;
+  padding-bottom: 6%;  
+}
+
+section.big-picture h1 {
+  font-size: 250%;
+  padding: 6%;  
+}
+
+#quote {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 200%;
+  color: #F2F2F2;
+  padding: 3%;
+  text-align: center;
+}
+
+
+/* RIBBON */
+
+.ribbon {
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+}
+
+.ribbon div {
+  font-size: 400%;
+}
+
+.ribbon h3 {
+  display: inline-block;
+  font-size: 100%;
+  padding: 0;
+}
+
+.ribbon-bit {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+#html {
+  background-color: #f5abbd;
+}
+
+#css {
+  background-color: #bdebb5;
+}
+
+#js {
+  background-color: #AADCD2;
+}
+
+#php {
+  background-color: #a5a8e6;
+}
+
+
+
+/* CONTENT */
+
+.content-wrapper-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #84cbd9;
+  min-height: 200px;
+}
+
+.content-wrapper-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a1db97;
+  min-height: 200px;
+}
+
+.content-wrapper-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f587a1;
+  min-height: 200px;
+}
+
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d6280;
+  min-height: 600px;
+}
+
+.page-content li {
+  list-style-type: disc;
+}
+
+#web-literacy {
+  padding-bottom: 4em;
+}
+
+#century-skills {
+  padding-bottom: 4em;
+}
+
+
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: #6975ac;
+  width: 100%;
+}
+
+
+/* SOCIAL */
+
+.social {
+  list-style-type: none;
+  text-align: center;
+}
+
+.social li {
+  display: inline;
+}
+
+.social i {
+  font-size: 450%;
+  margin: 1%;
+  padding: 2% 4% 2% 4%;
+  color: #C3D7DF;
+}
+
+.social i:hover {
+  color: #f5f5f5;
+}
+
+
+/* COPYRIGHT */
+
+footer.copyright {
+  border-top: 2px solid #AADCD2;
+  background-color: #544859;
+  max-height: 4rem;
+}
+
+footer.copyright * {
+  font-size: 100%;
+  line-height: 150%;
+  padding: 1% 0;
+  text-align: center;
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 961px) and (max-width: 1200px) {
+  .ribbon div {
+    font-size: 300%;
+  }
+  
+  h2 {
+    font-size: 150%;
+  }
+  
+  h3 {
+    font-size: 125%;
+  }
+  
+  div.content {
+    padding: 2% 16%;
+    font-size: 105%;
+  }
+  
+  header {
+    position: absolute;
+  }
+  
+  .big-picture {
+    padding-top: 86px;
+  }
+  
+  #quote {
+    font-size: 190%;
+    padding: 4%;
+  }
+  
+  .social i {
+    font-size: 300%;
+  }
+  
+  footer.copyright * {
+    font-size: 95%;
+  }
+}
+  
+  
+
+
+@media all and (min-width: 721px) and (max-width: 960px) {
+  
+  .ribbon div {
+    font-size: 250%;
+  }
+  
+  h2 {
+    font-size: 150%;
+  }
+  
+  h3 {
+    font-size: 125%;
+  }
+  
+  div.content {
+    padding: 2% 14%;
+    font-size: 100%;
+  }
+  
+  header {
+    position: absolute;
+  }
+  
+  #logo {
+    position: absolute;
+  }
+  
+  .big-picture {
+    padding-top: 86px;
+  }
+  
+  section.big-picture h2 {
+    font-size: 220%;
+  }
+
+  section.big-picture h1 {
+    font-size: 220%;
+  }
+  
+  #quote {
+    font-size: 140%;
+    padding: 6%;
+  }
+  
+  .social i {
+    font-size: 250%;
+  }
+  
+  footer.copyright * {
+    font-size: 90%;
+  }
+}
+
+
+
+@media all and (min-width: 501px) and (max-width: 720px) {
+
+  .ribbon div {
+    font-size: 220%;
+  }
+  
+  .ribbon h3 {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 150%;
+  }
+  
+  h3 {
+    font-size: 125%;
+  }
+  
+  div.content {
+    padding: 2% 12%;
+    font-size: 95%;
+  }
+  
+  header {
+    position: absolute;
+  }
+  
+  #logo {
+    position: absolute;
+  }
+  
+  .big-picture {
+    padding-top: 86px;
+  }
+  
+  section.big-picture h2 {
+    font-size: 180%;
+  }
+
+  section.big-picture h1 {
+    font-size: 180%;
+  }
+  
+  #quote {
+    font-size: 100%;
+    padding: 6%;
+  }
+  
+  .social i {
+    font-size: 220%;
+  }
+  
+  footer.copyright * {
+    font-size: 85%;
+  }
+}
+
+
+
+
+@media all and (max-width: 500px) {
+  
+  .ribbon div {
+    font-size: 200%;
+  }
+  
+  .ribbon h3 {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 150%;
+  }
+  
+  h3 {
+    font-size: 125%;
+  }
+  
+  div.content {
+    padding: 2% 10%;
+    font-size: 90%;
+  }
+  
+  header {
+    position: absolute;
+  }
+  
+  #logo {
+    position: absolute;
+    margin: 40px -10px;
+    width: 150px;
+    height: 75px;
+    background: url(../images/logo-rays-75x75.png) no-repeat center;
+  }
+  
+  .big-picture {
+    padding-top: 86px;
+  }
+
+  section.big-picture h2 {
+    font-size: 150%;
+  }
+
+  section.big-picture h1 {
+    font-size: 150%;
+  }
+  
+  #quote {
+    font-size: 85%;
+    padding: 8%;
+  }
+  
+  .social i {
+    font-size: 180%;
+  }
+  
+  footer.copyright * {
+    font-size: 80%;
+  }
+}

@@ -1,0 +1,183 @@
+/* WEB Portfolio: Navigation Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
+
+
+
+nav {
+  float: right;
+  padding: 25px 20px 0 0;
+}
+
+#menu-icon {
+  display: none;
+  width: 80px;
+  height: 67px;
+  margin: 15px 10px;
+  background: url(../images/nav-mobile-80x67.png) no-repeat center;
+}
+
+a:hover#menu-icon {
+  border-radius: 4px 4px 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  font-family: 'Baloo Paaji 2', cursive;
+  font-size: 110%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;  
+
+  background-color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+  color: #7daab3;
+  width: 90px;
+  height: 35px;
+  border-radius: 500px;
+  text-decoration: none;
+}
+
+nav ul li:nth-child(odd) {
+  margin-top: 35px;
+}
+
+nav ul li a:hover {
+  background-color: #59a2b3;
+  color: #F2F2F2;
+  transition: all 0.5s ease 0s;
+}
+
+nav ul li a.current {
+  background-color: #f65c78;
+  color: #F2F2F2;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 961px) and (max-width: 1200px) {
+  
+  #menu-icon {
+    display: inline-block;
+  }
+  
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #69ac83;
+    padding: 20px;
+    right: 20px;
+    top: 80px;
+    border: 2px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 110px;
+  }
+  
+  nav:hover ul {
+    display: block;
+  }
+  
+/*
+  nav li {
+    text-align: center;
+    font-size: 150%;
+    width: 100%;
+    padding: 10px 0;
+  }
+*/
+
+/*
+  nav a { 
+    width: 180px;
+    height: 70px;
+  }
+*/
+
+}
+
+@media all and (min-width: 721px) and (max-width: 960px) {
+  
+  #menu-icon {
+    display: inline-block;
+  }
+  
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #69ac83;
+    padding: 20px;
+    right: 20px;
+    top: 80px;
+    border: 2px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 110px;
+  }
+  
+  nav:hover ul {
+    display: block;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 720px) {
+  
+  #menu-icon {
+    display: inline-block;
+    background: url(../images/nav-mobile-50x42.png) no-repeat center;
+  }
+  
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #69ac83;
+    padding: 20px;
+    right: 20px;
+    top: 80px;
+    border: 2px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 110px;
+  }
+  
+  nav:hover ul {
+    display: block;
+  }
+}
+
+@media all and (max-width: 500px) {
+  
+  #menu-icon {
+    display: inline-block;
+    background: url(../images/nav-mobile-50x42.png) no-repeat center;
+  }
+  
+  nav ul, nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background: #69ac83;
+    padding: 20px;
+    right: 20px;
+    top: 80px;
+    border: 2px solid #fff;
+    border-radius: 2px 0 2px 2px;
+    width: 110px;
+  }
+  
+  nav:hover ul {
+    display: block;
+  }
+}
